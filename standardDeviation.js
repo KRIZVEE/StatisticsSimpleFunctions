@@ -40,7 +40,6 @@ const round = function(number) {
 
 const stdev = function(arr) {
   /* IMPLEMENT ME */
-  //2, 4, 4, 4, 5, 5, 7, 9
   console.log('incomign arr : ', arr);
   let numberOfValues = arr.length;
   let popMean = round(sum(arr) / numberOfValues);
@@ -55,24 +54,5 @@ const stdev = function(arr) {
   console.log('stdDev : ', stdDev);
   return stdDev;
 };
-// *          stdev = sqrt(sum((x - populationMean)^2)/numberOfValues)
-
-
-// const stdev = function(arr) {
-//   /* IMPLEMENT ME */
-//   console.log('arr : ', arr);
-//   let stdDev = 0;
-//   let mean = median(arr)
-//   console.log('mean : ',mean);
-//   let result = 0;
-//   console.log('arr is finally :',arr);
-//   for (let item of arr){
-//     console.log('item : ',item);
-//     result += Math.sqrt(sum(Math.pow(item - mean),2)/arr.length)
-//   }
-//   console.log('result',result);
-//   return result
-// };
-// *          stdev = sqrt(sum((x - populationMean)^2)/numberOfValues)
 // Don't change below:
 module.exports = { stdev };
